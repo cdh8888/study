@@ -1,5 +1,5 @@
 # study
 
-Welcome
+### Welcome
 
-my study room
+### My Study Room

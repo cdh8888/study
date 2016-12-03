@@ -13,7 +13,7 @@ Triangular numbers are so called because of the equilateral triangular shape tha
 
 You need to return the nth triangular number. You should return 0 for out of range values:
 
-```js
+```
   triangular(0)==0,
   triangular(2)==3,
   triangular(3)==6,

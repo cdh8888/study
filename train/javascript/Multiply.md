@@ -1,10 +1,10 @@
 # Multiply
 
-## Instructions
+### Instructions
 
 The code does not execute properly. Try to figure out why.
 
-## My Solution
+### My Solution
 
 function multiply(a, b){
   return a * b;

@@ -5,6 +5,7 @@
 #### Description:
 
 #### Pascal's Triangle
+![](https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif)
 
 Wikipedia article on Pascal's Triangle: http://en.wikipedia.org/wiki/Pascal's_triangle
 

@@ -14,6 +14,9 @@ accum("cwAt");    // "C-Ww-Aaa-Tttt"
 
 ### My Solution
 
+<details>
+  <summary>**Details**</summary>
+  <p>
 ```js
 function accum(s) {
   // your code
@@ -23,3 +26,5 @@ function accum(s) {
   }).join('-');
 }
 ```
+  </p>
+</details>

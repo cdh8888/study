@@ -1,4 +1,4 @@
-# Pascal's Triangle
+# **4kyu** Pascal's Triangle
 
 ### Instructions
 

@@ -1,3 +1,3 @@
-# Javascript Train My Solution.
+# Train My Solution.
 
-My solution with JavaScript.
+Usage language : JavaScript.

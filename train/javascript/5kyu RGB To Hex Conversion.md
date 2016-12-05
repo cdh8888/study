@@ -1,4 +1,4 @@
-# **5kyu** RGB To Hex Conversion
+# RGB To Hex Conversion
 
 ### Instructions
 

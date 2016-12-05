@@ -1,4 +1,4 @@
-# Train Result
+# Train My Solution
 
 ### Site : https://www.codewars.com/
 

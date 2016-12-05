@@ -17,8 +17,13 @@ rgb(148, 0, 211) // returns 9400D3
 
 ### My Solution
 
+<details>
+  <summary>**Details**</summary>
+  <p>
 ```js
 function rgb(r, g, b){
   return [r, g, b].reduce((result, dec)=>{ return result += dec >= 255 ? "FF" : dec <= 0 ? "00" : ("0" + dec.toString(16).toUpperCase()).slice(-2); }, "");
 }
 ```
+  </p>
+</details>

@@ -12,6 +12,9 @@ For example, the string "This website is for losers LOL!" would become "Ths wbst
 
 ### My Solution
 
+<details>
+  <summary>**Details**</summary>
+  <p>
 ```js
 function disemvowel(str) {
     
@@ -33,5 +36,6 @@ function disemvowel(str) {
 
   return firstCase(str);
 }
-
 ```
+  </p>
+</details>

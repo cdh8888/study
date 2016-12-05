@@ -17,6 +17,9 @@ All input strings will be nonempty, and will only consist of open parentheses '(
 
 ### My Solution
 
+<details>
+  <summary>**Details**</summary>
+  <p>
 ```js
 function validParentheses(parens){
  
@@ -29,3 +32,5 @@ function validParentheses(parens){
   return parens.length === 0;
 }
 ```
+  </p>
+</details>

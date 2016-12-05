@@ -19,6 +19,9 @@ Write a function that will return the count of distinct case-insensitive alphabe
 
 ### My Solution
 
+<details>
+  <summary>**Details**</summary>
+  <p>
 ```js
 function duplicateCount(text){
 
@@ -30,3 +33,5 @@ function duplicateCount(text){
   return overlap.length;
 }
 ```
+  </p>
+</details>

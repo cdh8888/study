@@ -19,6 +19,9 @@ tickets([25, 100])    // => NO. Vasya will not have enough money to give change 
 
 ### My Solution
 
+<details>
+  <summary>**Details**</summary>
+  <p>
 ```js
 function tickets(peopleInLine){
   let result = "YES";
@@ -61,3 +64,5 @@ function tickets(peopleInLine){
   return result;
 }
 ```
+  </p>
+</details>

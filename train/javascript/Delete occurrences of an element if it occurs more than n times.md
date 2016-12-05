@@ -19,6 +19,9 @@ deleteNth ([20,37,20,21],1) // return [20,37,21]
 
 ### My Solution
 
+<details>
+  <summary>**Details**</summary>
+  <p>
 ```js
 function deleteNth(arr,x){
 
@@ -33,3 +36,5 @@ function deleteNth(arr,x){
   return result;
 }
 ```
+  </p>
+</details>

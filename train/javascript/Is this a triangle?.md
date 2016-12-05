@@ -8,9 +8,14 @@ Implement a method that accepts 3 integer values a, b, c. The method should retu
 
 ### My Solution
 
+<details>
+  <summary>**Details**</summary>
+  <p>
 ```js
 function isTriangle(a,b,c)
 {
    return !(a * b < c || a * c < b || b * c < a) ;
 }
 ```
+  </p>
+</details>

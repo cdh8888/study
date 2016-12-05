@@ -16,6 +16,9 @@ You can assume that you will only get positive integers as inputs.
 
 ### My Solution
 
+<details>
+  <summary>**Details**</summary>
+  <p>
 ```js
 function divisors(integer) {
   const result = [];
@@ -26,3 +29,5 @@ function divisors(integer) {
   return result.length === 0 ? `${integer} is prime` : result;
 };
 ```
+  </p>
+</details>

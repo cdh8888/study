@@ -22,9 +22,14 @@ triangular(-10)==0
 
 ### My Solution
 
+<details>
+  <summary>**Details**</summary>
+  <p>
 ```js
 // Return the nth triangular number
 function triangular( n ) {
   return (n > 0 ? n + triangular(n-1) : 0);
 }
 ```
+  </p>
+</details>

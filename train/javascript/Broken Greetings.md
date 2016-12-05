@@ -5,6 +5,7 @@
 Correct this code so that the greet function returns the expected value.
 
 ### My Solution
+
 <details>
   <summary>**Details**</summary>
   <p>

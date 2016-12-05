@@ -19,6 +19,9 @@ pascalsTriangle(4) == [1,1,1,1,2,1,1,3,3,1]
 
 ### My Solution
 
+<details>
+  <summary>**Details**</summary>
+  <p>
 ```js
 function pascalsTriangle(n) {
   const result = new Array();
@@ -38,3 +41,5 @@ function pascalsTriangle(n) {
   return result.reduce((result, array)=>{ return result.concat(array); }, []);
 }
 ```
+  </p>
+</details>

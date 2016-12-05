@@ -17,7 +17,9 @@ difference([1,2,2,2,3],[2]) == [1,3]
 ```
 
 ### My Solution
-
+<details>
+  <summary>**Detail**</summary>
+  <p>
 ```js
 function array_diff(a, b) {
 
@@ -31,3 +33,5 @@ function array_diff(a, b) {
   return result;
 }
 ```
+  </p>
+</details>

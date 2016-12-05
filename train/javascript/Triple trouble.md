@@ -25,6 +25,9 @@ tripledouble(666789, 12345667) == 1
 
 ### My Solution
 
+<details>
+  <summary>**Details**</summary>
+  <p>
 ```js
 function tripledouble(num1, num2) {
   const num1Exist = [000,111,222,333,444,555,666,777,888,999].filter((number)=>{ return num1.toString().indexOf(number) !== -1; });
@@ -33,3 +36,5 @@ function tripledouble(num1, num2) {
   return num2Exist.filter((number)=>{ return num1Exist.toString().indexOf(number) !== -1; }).length ? 1 : 0;
 }
 ```
+  </p>
+</details>

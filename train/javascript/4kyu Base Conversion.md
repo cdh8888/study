@@ -51,10 +51,6 @@ function convert(input, source, target) {
 
   if(source === target){
     return input;
-function convert(input, source, target) {
-
-  if(source === target){
-    return input;
   }
 
   const decimal = convertAlphabetToDecimal(input, source); 

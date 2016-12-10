@@ -54,17 +54,19 @@ function convert(input, source, target) {
   }
 
   let decimal = input.split('').reduce(function(result, value){ return (result + source.indexOf(value)) * source.length; }, 0) / source.length;
-  let result = '';
-  while(true){
-    if(target.length > decimal) {
-      result=target[Math.floor(decimal)].concat(result);
-      break;
-    } else {
-      result=target[Math.floor(decimal % target.length)].concat(result);
-      decimal = Math.floor(decimal / target.length);
-    }
-  }
 
+  let result = convertBase('', decimal);
+  
+  function convertBase(result, decimal){
+
+    if(target.length > decimal) {
+      return target[Math.floor(decimal)].concat(result);
+    }
+    result=target[Math.floor(decimal % target.length)].concat(result);
+    decimal = Math.floor(decimal / target.length);
+    return convertBase(result, decimal, target);
+  }
+  
   return result;
 }
 ```

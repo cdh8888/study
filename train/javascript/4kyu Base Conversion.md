@@ -53,38 +53,16 @@ function convert(input, source, target) {
     return input;
   }
 
-  const decimal = convertAlphabetToDecimal(input, source); 
-  const result = convertDecimalToAlphabet(decimal, target); 
-
-  function convertAlphabetToDecimal(alphabetValue, alphaType){
-    let result = 0;
-    let value = alphabetValue;
-
-    for(i=0; i<value.length; i++){
-      if(i === value.length-1){
-        result += alphaType.indexOf(value.charAt(i));
-      }
-      else {
-        result = (result + alphaType.indexOf(value.charAt(i))) * alphaType.length;
-      }
+  let decimal = input.split('').reduce(function(result, value){ return (result + source.indexOf(value)) * source.length; }, 0) / source.length;
+  let result = '';
+  while(true){
+    if(target.length > decimal) {
+      result=target[Math.floor(decimal)].concat(result);
+      break;
+    } else {
+      result=target[Math.floor(decimal % target.length)].concat(result);
+      decimal = Math.floor(decimal / target.length);
     }
-
-    return result;
-  }
-
-  function convertDecimalToAlphabet(decimal, alphaType){
-    let result = '';
-    let value = decimal;
-    while(true){
-      if(alphaType.length > value) {
-        result=alphaType[Math.floor(value)].concat(result);
-        break;
-      } else {
-        result=alphaType[Math.floor(value % alphaType.length)].concat(result);
-        value = Math.floor(value / alphaType.length);
-      }
-    }
-    return result;
   }
 
   return result;

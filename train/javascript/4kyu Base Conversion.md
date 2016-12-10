@@ -51,37 +51,19 @@ function convert(input, source, target) {
 
   if(source === target){
     return input;
-  }
-  
-  const Alphabet = {
-    BINARY:        '01',
-    OCTAL:         '01234567',
-    DECIMAL:       '0123456789',
-    HEXA_DECIMAL:  '0123456789abcdef'
-  };
- 
-  let decimal;
-  switch(source){
-  case Alphabet.BINARY: 
-  case Alphabet.OCTAL: 
-  case Alphabet.DECIMAL: 
-  case Alphabet.HEXA_DECIMAL: decimal = parseInt(input, source.length); break;
-  default: decimal = convertAlphabetToDecimal(input, source); break;
+function convert(input, source, target) {
+
+  if(source === target){
+    return input;
   }
 
-  let result;
-  switch(target){
-  case Alphabet.BINARY: 
-  case Alphabet.OCTAL: 
-  case Alphabet.DECIMAL:
-  case Alphabet.HEXA_DECIMAL: result = decimal.toString(target.length); break;
-  default: result = convertDecimalToAlphabet(decimal, target);  break;
-  }
+  const decimal = convertAlphabetToDecimal(input, source); 
+  const result = convertDecimalToAlphabet(decimal, target); 
 
   function convertAlphabetToDecimal(alphabetValue, alphaType){
     let result = 0;
     let value = alphabetValue;
-   
+
     for(i=0; i<value.length; i++){
       if(i === value.length-1){
         result += alphaType.indexOf(value.charAt(i));
@@ -90,7 +72,7 @@ function convert(input, source, target) {
         result = (result + alphaType.indexOf(value.charAt(i))) * alphaType.length;
       }
     }
-    
+
     return result;
   }
 
